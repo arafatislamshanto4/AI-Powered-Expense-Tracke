@@ -1,0 +1,267 @@
+/* Basic Reset */
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #ecf0f1; /* Light gray background */
+  color: #2c3e50; /* Dark blue text */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+header {
+  background: rgba(44, 62, 80, 0.9); /* Semi-transparent dark blue */
+  backdrop-filter: blur(10px); /* Glass morphism effect */
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #3498db; /* Soft blue accent */
+}
+
+.login-btn, .profile-btn {
+  background: #3498db; /* Soft blue button */
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.login-btn:hover, .profile-btn:hover {
+  background: #2980b9; /* Darker blue on hover */
+}
+
+.profile-btn {
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Home Section */
+.home-section {
+  padding: 150px 0;
+  text-align: center;
+  background: #fff; /* White background */
+}
+
+.home-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #2c3e50; /* Dark blue text */
+}
+
+.home-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #2c3e50; /* Dark blue text */
+}
+
+.btn {
+  background: #3498db; /* Soft blue button */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #2980b9; /* Darker blue on hover */
+}
+
+/* Features Section */
+.features-section {
+  padding: 80px 0;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Glass morphism effect */
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c3e50; /* Dark blue text */
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-10px); /* Hover effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature i {
+  font-size: 2rem;
+  color: #3498db; /* Soft blue accent */
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2c3e50; /* Dark blue text */
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #2c3e50; /* Dark blue text */
+}
+
+/* Dashboard Section */
+.dashboard-section {
+  padding: 80px 0;
+  background: #fff; /* White background */
+}
+
+.dashboard-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c3e50; /* Dark blue text */
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Hover effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2c3e50; /* Dark blue text */
+}
+
+.card p {
+  font-size: 1.2rem;
+  color: #2c3e50; /* Dark blue text */
+}
+
+/* Reports Section */
+.reports-section {
+  padding: 80px 0;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Glass morphism effect */
+}
+
+.reports-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c3e50; /* Dark blue text */
+}
+
+.reports-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.report-card {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.report-card:hover {
+  transform: translateY(-10px); /* Hover effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.report-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2c3e50; /* Dark blue text */
+}
+
+.report-card p {
+  font-size: 1rem;
+  color: #2c3e50; /* Dark blue text */
+}
+
+/* Footer */
+footer {
+  background: rgba(44, 62, 80, 0.9); /* Semi-transparent dark blue */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #3498db; /* Soft blue accent */
+}
